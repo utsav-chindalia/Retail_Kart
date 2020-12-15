@@ -1,0 +1,8 @@
+1. ## To start mock database and access using express frontend server run:
+    cd Retail_Kart/backend/mockserver/database/
+    docker-compose -f docker-compose.yml up -d 
+2. ## To access the database go to :
+    http://localhost:8081
+3. ## To stop the server run :
+    cd Retail_Kart/backend/mockserver/database/
+    docker-compose -f docker-compose.yml down 
