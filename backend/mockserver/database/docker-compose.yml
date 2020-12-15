@@ -4,10 +4,6 @@ services:
 
   mongo:
     image: mongo:3-xenial
-    volumes:
-       - type: bind
-         source: ./database-storage 
-         target: /data/db
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: password
