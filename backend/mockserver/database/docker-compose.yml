@@ -4,6 +4,10 @@ services:
 
   mongo:
     image: mongo:3-xenial
+    volumes:
+       - type: volume
+         source: database-volume
+         target: /data/db
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: password
@@ -22,3 +26,6 @@ services:
 
 networks: 
   dbnet1:
+
+volumes:
+  database-volume:
