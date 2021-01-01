@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start_database": "cd ./scripts && bash start_database.sh"
+    "start_database": "cd ./scripts && bash start_database.sh",
+    "stop_database": "cd ./scripts && bash stop_database.sh"
   },
   "author": "Utsav Chindalia",
   "license": "ISC",

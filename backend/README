@@ -1,2 +1,5 @@
 ## To start mock-database 
 npm run start_database 
+
+## To stop mock-database
+npm run stop_database
