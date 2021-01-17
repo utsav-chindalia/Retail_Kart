@@ -1,3 +1,6 @@
+##Run
+npm install
+
 ## To start mock-database 
 npm run start_database 
 
