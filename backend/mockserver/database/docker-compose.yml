@@ -4,6 +4,8 @@ services:
 
   mongo:
     image: mongo:3-xenial
+    ports:
+      - 27017:27017 
     volumes:
        - type: volume
          source: database-volume
