@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start_database": "cd ./scripts && bash start_database.sh",
-    "stop_database": "cd ./scripts && bash stop_database.sh"
+    "start_db": "cd ./scripts && bash start_database.sh",
+    "stop_db": "cd ./scripts && bash stop_database.sh",
+    "connect_db": "node ./src/database/connection/connect.js"
   },
   "author": "Utsav Chindalia",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "gulp": "^4.0.2"
   },
   "dependencies": {
-    "mongodb": "^3.6.3"
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.13"
   }
 }

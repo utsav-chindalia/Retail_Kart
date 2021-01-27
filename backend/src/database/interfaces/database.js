@@ -5,23 +5,23 @@ module.exports = () => {
     const listDatabases = require('../operations/common/check_database').listDatabases;
     let db = null;
 
-    const createDatabase = async () => {
-        await clientConnect();
+    const createDatabase = () => {
+        clientConnect();
         db = client.db(config.database);
     }
-    const clientClose = async () => {
-        return await client.close();
+    const clientClose = () => {
+        return client.close();
     }
-    const clientConnect = async () => {
-        return await client.connect();
+    const clientConnect = () => {
+        return client.connect();
     }
-    const showDatabase = async () => {
-        await listDatabases(client);
+    const showDatabase = () => {
+        listDatabases(client);
     }
 
-    const getDatabase = async () => {
+    const getDatabase = () => {
         if(db == null){
-            await createDatabase();
+            createDatabase();
         }
         console.log( "Database:" + config.database + " Connected ")
         return db;

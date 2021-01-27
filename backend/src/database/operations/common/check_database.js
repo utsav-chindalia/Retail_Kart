@@ -1,6 +1,6 @@
-const getDatabase = require('../../connection/connect');
+const databaseFactory = require('../../interfaces/database');
+const db = databaseFactory().getDatabase();
 const testDatabase = (async () => {
-    const db = await getDatabase();
     const productCollection = db.collection("product2");
     const prod1Document = {
         name: "Iphone12",

@@ -2,7 +2,10 @@
 npm install
 
 ## To start mock-database 
-npm run start_database 
+npm run start_db 
 
 ## To stop mock-database
-npm run stop_database
+npm run stop_db
+
+## To connect to database
+npm run connect_db
