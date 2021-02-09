@@ -7,15 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start_db": "cd ./scripts && bash start_database.sh",
     "stop_db": "cd ./scripts && bash stop_database.sh",
-    "connect_db": "node ./src/database/connection/connect.js"
+    "connect_db": "node ./src/database/connection/connect.js",
+    "start_server": "nodemon --watch server --inspect ./src/server/server.js"
   },
   "author": "Utsav Chindalia",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "nodemon": "^2.0.7"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "mongodb": "^3.6.3",
-    "mongoose": "^5.11.13"
+    "mongoose": "^5.11.13",
+    "multer": "^1.4.2"
   }
 }
